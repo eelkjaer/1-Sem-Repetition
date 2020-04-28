@@ -11,14 +11,17 @@ public class Main {
         //ArrayListe opgaven
         StringToArrayList sta = new StringToArrayList();
         sta.runArrayList();
+        //TODO: JUnit test
 
         //Bog opgaven
         BogController bog = new BogController();
         bog.addSampleBooks();
+        //TODO: JUnit test
 
         //Hvor tit skal græsset slås
         TidTilKlipning ttk = new TidTilKlipning();
         ttk.beregnMaksDage();
+        //TODO: JUnit test
     }
 
 
