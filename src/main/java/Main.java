@@ -6,6 +6,8 @@ import Bog.*;
 import Grass.*;
 import Kvadrat.*;
 import Menu.*;
+import ProperCase.ProperCase;
+import Regning.Regning;
 
 public class Main {
 
@@ -41,6 +43,18 @@ public class Main {
 
         //Proper case
         //TODO: JUnit test
+        ProperCase prc = new ProperCase();
+        try {
+            //System.out.println(prc.ensureCasing("HEJ med DiG SMuKKE fiskemand"));
+        } catch(IllegalArgumentException e){
+            System.out.println(e);
+        }
+
+        //Regning
+        //TODO: JUnit test
+        Regning regning = new Regning();
+        regning.udregnResultat(40,30);
+        regning.udregnResultat(1,50);
 
 
     }

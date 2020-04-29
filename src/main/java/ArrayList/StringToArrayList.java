@@ -4,6 +4,7 @@
 package ArrayList;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class StringToArrayList {
 
@@ -24,6 +25,7 @@ public class StringToArrayList {
             return false;
         } else {
             arraylist.add(str);
+            Collections.sort(arraylist);
             return true;
         }
     }
