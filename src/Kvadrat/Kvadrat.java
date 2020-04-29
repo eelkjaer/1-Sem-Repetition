@@ -4,6 +4,9 @@
 package Kvadrat;
 
 public class Kvadrat {
+    public Kvadrat(){
+        System.out.println("\n### Kvadrat ###");
+    }
     public void tegnKvadrat(int size, String sign) throws Exception{
         if(size < 0){
             throw new Exception("Negative tal er ikke tilladt!");

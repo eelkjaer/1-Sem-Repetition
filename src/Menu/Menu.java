@@ -9,6 +9,10 @@ public class Menu {
     private final Scanner input = new Scanner(System.in);
     private int menuvalg;
 
+    public Menu(){
+        System.out.println("\n### Menuvalg ###");
+    }
+
     public void vaelgMenu(){
         printMenu();
         menuvalg = brugerInput();
