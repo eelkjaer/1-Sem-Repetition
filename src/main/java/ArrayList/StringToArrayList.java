@@ -19,7 +19,7 @@ public class StringToArrayList {
         System.out.println(addToArrayList(arrayList,null));
     }
 
-    private boolean addToArrayList(ArrayList<String> arraylist, String str){
+    public boolean addToArrayList(ArrayList<String> arraylist, String str){
         if(arraylist.contains(str) || str == null){
             return false;
         } else {
