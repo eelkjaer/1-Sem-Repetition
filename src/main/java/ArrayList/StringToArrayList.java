@@ -21,11 +21,11 @@ public class StringToArrayList {
     }
 
     public boolean addToArrayList(ArrayList<String> arraylist, String str){
-        if(arraylist.contains(str) || str == null){
+        if(arraylist.contains(str) || str == null){ //Fejl hvis ordet allerede findes eller strengen er tom
             return false;
         } else {
-            arraylist.add(str);
-            Collections.sort(arraylist);
+            arraylist.add(str); //Tilføj til listen
+            Collections.sort(arraylist); //Sorter listen alfabetisk
             return true;
         }
     }

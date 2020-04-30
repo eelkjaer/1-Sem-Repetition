@@ -6,12 +6,16 @@ import Bog.*;
 import Grass.*;
 import Kvadrat.*;
 import Menu.*;
-import ProperCase.ProperCase;
-import Regning.Regning;
+import ProperCase.*;
+import Regning.*;
+import Sogning.*;
+import Sortering.*;
+import StortBogstav.*;
+import Strenge.*;
 
 public class Main {
 
-    public static void main(String[] args){
+    public static void main(String[] args) throws Exception {
         //ArrayListe opgaven
         //TODO: JUnit test
         StringToArrayList sta = new StringToArrayList();
@@ -30,11 +34,7 @@ public class Main {
         //Kvadrat
         //TODO: JUnit test
         Kvadrat kv = new Kvadrat();
-        try {
-            //kv.tegnKvadrat(6, "#");
-        } catch (Exception e){
-            System.out.println(e.getMessage());
-        }
+        //kv.tegnKvadrat(6, "#");
 
         //Menuvalg
         //TODO: JUnit test
@@ -44,18 +44,34 @@ public class Main {
         //Proper case
         //TODO: JUnit test
         ProperCase prc = new ProperCase();
-        try {
-            //System.out.println(prc.ensureCasing("HEJ med DiG SMuKKE fiskemand"));
-        } catch(IllegalArgumentException e){
-            System.out.println(e);
-        }
+        //System.out.println(prc.ensureCasing("HEJ med DiG SMuKKE fiskemand"));
 
         //Regning
         //TODO: JUnit test
         Regning regning = new Regning();
-        regning.udregnResultat(40,30);
-        regning.udregnResultat(1,50);
+        //regning.udregnResultat(40,30);
+        //regning.udregnResultat(1,50);
 
+        //Sortering
+        //TODO: JUnit test
+        Sortering sort = new Sortering();
+        //sort.sorterInput();
+
+        //Stort bogstav
+        //TODO: JUnit test
+        StortBogstav stb = new StortBogstav();
+        //stb.inputWords();
+
+        //Strenge
+        //TODO: JUnit test
+        Strenge str = new Strenge();
+        //System.out.println(str.nyStreng("hej","med",'m','n'));
+
+        //Søgning
+        //TODO: JUnit test
+        Sogning sog = new Sogning();
+        String[] array = new String[]{"hej","abe","mand"};
+        //System.out.println("Index: " + sog.findStrengIArray(array,"abe"));
 
     }
 

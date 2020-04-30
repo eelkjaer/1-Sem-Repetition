@@ -12,7 +12,7 @@ public class Bibliotek {
     }
 
     public boolean addBog(Bog bog) {
-        if(!boeger.contains(bog)){
+        if(!boeger.contains(bog)){ //Hvis bogens ISBN ikke findes, tilføjes den.
             boeger.add(bog);
             return true;
         } else {

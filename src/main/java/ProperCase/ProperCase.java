@@ -31,6 +31,6 @@ public class ProperCase {
             }
                 casedStr.append(" ");
         }
-        return casedStr.toString();
+        return casedStr.toString().trim();
     }
 }

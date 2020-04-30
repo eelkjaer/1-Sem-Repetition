@@ -10,7 +10,6 @@ public class TidTilKlipning {
         System.out.println("\n### Hvor tit skal græsset slås? ###");
     }
     Scanner input = new Scanner(System.in);
-    private final double prDag = 0.8;
 
     public void beregnMaksDage(){
         System.out.print("\nHvor langt er dit græs nu? (cm): ");
@@ -31,8 +30,9 @@ public class TidTilKlipning {
         }
     }
 
-    private double dageTilSlaaning(double nu, double max){
-        return (max-nu)*prDag;
+    public double dageTilSlaaning(double nu, double max){
+        double prDag = 0.8;
+        return (max-nu)* prDag;
     }
 
 }
