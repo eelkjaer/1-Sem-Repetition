@@ -5,8 +5,6 @@ package Bog;
 
 import Bog.Model.*;
 
-import java.util.Random;
-
 public class BogController {
     Bibliotek bib = new Bibliotek();
 

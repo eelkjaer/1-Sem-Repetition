@@ -25,7 +25,7 @@ public class Sortering {
             list.add(str);
             i++;
         }
-        Collections.sort(list,Collections.reverseOrder());
+        list.sort(Collections.reverseOrder());
         printList();
     }
 

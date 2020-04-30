@@ -2,8 +2,6 @@ package Strenge;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class StrengeTest {
     public Strenge str = new Strenge();
 

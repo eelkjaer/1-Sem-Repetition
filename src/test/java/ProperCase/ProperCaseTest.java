@@ -11,10 +11,6 @@ import static org.junit.Assert.*;
 public class ProperCaseTest {
     ProperCase prc = new ProperCase();
 
-    @Before
-    public void setUp() throws Exception {
-    }
-
     @Test
     @Order(1)
     public void shouldBeValid() {

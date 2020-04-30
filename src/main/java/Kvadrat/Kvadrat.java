@@ -7,6 +7,12 @@ public class Kvadrat {
     public Kvadrat(){
         System.out.println("\n### Kvadrat ###");
     }
+
+    /**
+     * @param size Højde/Bredde på kvadraten
+     * @param sign Hvilken char skal kvadraten laves af?
+     * @throws Exception Såfremt størrelsen er nul eller over 50
+     */
     public void tegnKvadrat(int size, String sign) throws Exception{
         if(size < 0){
             throw new Exception("Negative tal er ikke tilladt!");

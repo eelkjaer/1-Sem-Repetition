@@ -12,6 +12,9 @@ public class StringToArrayList {
         System.out.println("\n### ArrayList opgave ###");
     }
 
+    /**
+     * Tilføjer pre-defineret strenge til arraylisten
+     **/
     public void runArrayList(){
         ArrayList<String> arrayList = new ArrayList();
         System.out.println(addToArrayList(arrayList,"abc"));
@@ -20,6 +23,11 @@ public class StringToArrayList {
         System.out.println(addToArrayList(arrayList,null));
     }
 
+    /**
+     @param arraylist En tom eller fyldt ArrayList som String objekterne skal fyldes i.
+     @param str En streng som skal fyldes i listen.
+     @return Hvis tilføjet til listen = true. Ellers false.
+     **/
     public boolean addToArrayList(ArrayList<String> arraylist, String str){
         if(arraylist.contains(str) || str == null){ //Fejl hvis ordet allerede findes eller strengen er tom
             return false;

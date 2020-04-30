@@ -13,7 +13,7 @@ import java.util.ArrayList;
     StringToArrayList sta = new StringToArrayList();
 
     @BeforeEach
-    public void setUp() throws Exception {
+    public void setUp(){
         testlist = new ArrayList<>();
         String obj1 = "test";
         sta.addToArrayList(testlist,obj1);

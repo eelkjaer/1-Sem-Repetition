@@ -10,10 +10,6 @@ import static org.junit.Assert.*;
 public class TidTilKlipningTest {
     TidTilKlipning ttk = new TidTilKlipning();
 
-    @Before
-    public void setUp() throws Exception {
-    }
-
     @Test
     public void beregnMaksDage() {
         double expected = 1.25;

@@ -4,7 +4,6 @@
 package Sogning;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 public class SogningTest {
     Sogning sog = new Sogning();

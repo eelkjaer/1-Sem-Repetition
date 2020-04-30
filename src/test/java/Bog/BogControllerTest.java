@@ -8,16 +8,13 @@ import Bog.Model.Bog;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import static org.junit.jupiter.api.Assertions.*;
-import org.junit.jupiter.api.*;
-import static org.junit.Assert.*;
 
 public class BogControllerTest {
     Bibliotek bib = new Bibliotek();
     Bog bog1,bog2,bog3,bog4,bog5;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         bog1 = new Bog(200,"Bog 1", 1994);
         bog2 = new Bog(300,"Bog 2", 1940);
         bog3 = new Bog(200,"Bog 3", 1993);

@@ -6,7 +6,7 @@ package Bog.Model;
 import java.util.ArrayList;
 
 public class Bibliotek {
-    private ArrayList<Bog> boeger = new ArrayList();
+    private final ArrayList<Bog> boeger = new ArrayList();
 
     public Bibliotek(){
     }

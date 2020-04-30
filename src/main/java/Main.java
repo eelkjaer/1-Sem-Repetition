@@ -17,7 +17,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    private static Scanner input = new Scanner(System.in);
+    private static final Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
             try {
@@ -53,7 +53,7 @@ public class Main {
                 case 5:
                     //Menuvalg
                     Menu menu = new Menu();
-                    //menu.vaelgMenu();
+                    menu.vaelgMenu();
                     menu();
                 case 6:
                     //Proper case

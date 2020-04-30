@@ -7,7 +7,6 @@ import java.util.Scanner;
 
 public class Menu {
     private final Scanner input = new Scanner(System.in);
-    private int menuvalg;
 
     public Menu(){
         System.out.println("\n### Menuvalg ###");
@@ -15,7 +14,7 @@ public class Menu {
 
     public void vaelgMenu(){
         printMenu();
-        menuvalg = brugerInput();
+        int menuvalg = brugerInput();
         switch (menuvalg){
             case 1:
                 System.out.println("Beregn valgt");
